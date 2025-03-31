@@ -1,0 +1,163 @@
+body {
+    background-color: #0b061d;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    padding: 15px 20px;
+    white-space: nowrap; /* Ensure items stay in one line */
+}
+
+.header-nav {
+    display: flex;
+    gap: 15px; /* Space between items */
+    flex-wrap: nowrap; /* Prevents items from breaking into a new line */
+    align-items: center;
+}
+
+.header-nav a {
+    white-space: nowrap; /* Ensure links don't wrap */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.header-nav a:hover {
+    color: #a500f0;
+}
+
+/* Adjust "About Me" link icon */
+.pdf-link i {
+    color: white; /* Match other icons */
+    font-size: 20px;
+}
+
+/* Hero Section */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+}
+
+.cse-student {
+    color: #a500f0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 600px;
+}
+
+.btn {
+    background-color: #a500f0;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #7500b0;
+    transform: translateY(-5px);
+}
+
+/* Profile Image */
+.hero-img img {
+    width: 180px;
+    border-radius: 50%;
+    border: 3px solid #a500f0;
+}
+
+/* Projects Section */
+.projects-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: #1b1134;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.2);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    font-size: 20px;
+}
+
+.project-card .btn {
+    background-color: #a500f0;
+    color: white;
+    padding: 8px 16px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.project-card .btn:hover {
+    background-color: #7500b0;
+    transform: translateY(-5px);
+}
+
+/* Footer */
+.footer-content {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #a500f0;
+    transform: translateY(-5px);
+}
