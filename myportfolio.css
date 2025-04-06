@@ -9,27 +9,27 @@ body {
 .container {
     max-width: 1000px;
     margin: auto;
+    padding: 0 20px;
 }
 
-/* Header Styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    padding: 15px 20px;
-    white-space: nowrap; /* Ensure items stay in one line */
+    flex-wrap: nowrap;
+    padding: 15px 0;
+    white-space: nowrap;
 }
 
 .header-nav {
     display: flex;
-    gap: 15px; /* Space between items */
-    flex-wrap: nowrap; /* Prevents items from breaking into a new line */
+    gap: 15px;
+    flex-wrap: nowrap;
     align-items: center;
 }
 
 .header-nav a {
-    white-space: nowrap; /* Ensure links don't wrap */
+    white-space: nowrap;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -40,23 +40,24 @@ header {
     color: #a500f0;
 }
 
-/* Adjust "About Me" link icon */
 .pdf-link i {
-    color: white; /* Match other icons */
+    color: white;
     font-size: 20px;
 }
 
-/* Hero Section */
 .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .hero-text {
     flex: 1;
     text-align: left;
+    min-width: 280px;
 }
 
 .hero-text h1 {
@@ -91,14 +92,12 @@ header {
     transform: translateY(-5px);
 }
 
-/* Profile Image */
 .hero-img img {
     width: 180px;
     border-radius: 50%;
     border: 3px solid #a500f0;
 }
 
-/* Projects Section */
 .projects-section {
     margin-top: 50px;
     text-align: center;
@@ -108,6 +107,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .project-card {
@@ -144,7 +144,6 @@ header {
     transform: translateY(-5px);
 }
 
-/* Footer */
 .footer-content {
     margin-top: 40px;
     text-align: center;
@@ -160,4 +159,51 @@ header {
 .social-icons a:hover {
     color: #a500f0;
     transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .cse-student {
+        font-size: 16px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero-img img {
+        width: 140px;
+    }
+
+    .header-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
 }
